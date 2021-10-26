@@ -5,6 +5,7 @@ import "./App.css";
 
 import Header from "../Header/Header.js";
 import Footer from "../Footer/Footer.js";
+import Competitions from "../Competitions/Competitions.js";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Header />
+          <Competitions />
           <Footer />
         </Route>
       </Switch>
