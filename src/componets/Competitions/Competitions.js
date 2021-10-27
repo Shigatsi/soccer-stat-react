@@ -8,8 +8,14 @@ function Competitons() {
     setCompetitions(getCompetitions());
   }, []);
 
-  console.log(competitions);
-  return <div></div>;
+  console.log("competitions", competitions);
+  return (
+    <div>
+      {/* {competitions.map((competition) => (
+        <p>{competition}</p>
+      ))} */}
+    </div>
+  );
 }
 
 export default Competitons;
