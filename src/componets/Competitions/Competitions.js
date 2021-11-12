@@ -5,19 +5,14 @@ function Competitons() {
   const [competitions, setCompetitions] = React.useState([]);
 
   React.useEffect(() => {
-    setCompetitions(getCompetitions());
+    getCompetitions().then((res) => {
+      console.log("competitions_res", res);
+      setCompetitions(res);
+    });
   }, []);
-  // const parsCompetitions = JSON.parse(competitions);
-  // console.log("parsCompetitions", parsCompetitions);
 
   console.log("competitions from Competitions.js", competitions);
-  return (
-    <div>
-      {/* {competitions.map((competition) => (
-        <p>{competition}</p>
-      ))} */}
-    </div>
-  );
+  return <div></div>;
 }
 
 export default Competitons;
