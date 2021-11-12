@@ -7,8 +7,10 @@ function Competitons() {
   React.useEffect(() => {
     setCompetitions(getCompetitions());
   }, []);
+  // const parsCompetitions = JSON.parse(competitions);
+  // console.log("parsCompetitions", parsCompetitions);
 
-  console.log("competitions", competitions);
+  console.log("competitions from Competitions.js", competitions);
   return (
     <div>
       {/* {competitions.map((competition) => (

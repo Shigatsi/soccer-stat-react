@@ -8,11 +8,14 @@ const getCompetitions = () => {
     dataType: "json",
     method: "GET",
     headers: {
-      "X-Auth-Token": "",
+      "X-Auth-Token": "798bee720aea4400a45f7e33420a67c2",
     },
-    body: JSON.stringify({ competitions }),
   })
     .then(checkRes)
+    .then((res) => {
+      console.log("res", res);
+    })
+
     .catch((err) => {
       console.log(err);
     });
