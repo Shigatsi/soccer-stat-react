@@ -13,7 +13,6 @@ const getCompetitions = () => {
   })
     .then(checkRes)
     .then((res) => {
-      console.log("res", res);
       return res;
     })
 
