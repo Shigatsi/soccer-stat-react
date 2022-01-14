@@ -1,0 +1,33 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8d9d3;
+    height: 100vh;
+
+
+}
+
+.not-found__title {
+    font-size: 80px;
+    line-height: 85px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.not-found__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.not-found__link {
+    color: #000;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.not-found__link:hover {
+    font-weight: 700;
+}

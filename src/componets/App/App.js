@@ -6,6 +6,8 @@ import "./App.css";
 import Header from "../Header/Header.js";
 import Footer from "../Footer/Footer.js";
 import Competitions from "../Competitions/Competitions.js";
+import PageNotFound from "../PageNotFound/PageNotFound.js";
+
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
           <Header />
           <Competitions />
           <Footer />
+        </Route>
+        <Route path = '*'>
+          <PageNotFound />
         </Route>
       </Switch>
     </div>
