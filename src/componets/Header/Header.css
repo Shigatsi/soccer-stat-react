@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    padding:18px 70px;
+    align-items:center;
+    justify-content: space-between;
+    background-color:  #8a9992;
+  }
+
+.header__logotype-container {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+.header__logo {
+    width: 40px;
+}

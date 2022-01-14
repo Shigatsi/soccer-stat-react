@@ -1,20 +1,73 @@
+/* Reset CSS */
 
-@import url('../../vendor/fonts/fonts.css');
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-.page {
-  -moz-osx-font-smoothing: grayscale;
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/*  3. Allow percentage-based heights in the application,
+root selector added for React app */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Typographic tweaks! */
+/* 4. Improve text rendering */
+body {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
-  background-color: #fff;
-  min-width: 320px;
-  margin: 0 auto;
-  font-family: 'Inter', Arial, sans-serif;
-  position: relative;
 }
 
-body {
-  margin: 0;
+/*5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Remove built-in form typography styles*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+p {
+  hyphens: auto;
+}
+
+.page {
+  background-color: #fff;
+  min-width: 320px;
+  height: 100%;
+  font-family: "Roboto", Arial, sans-serif;
+  position: relative;
 }
